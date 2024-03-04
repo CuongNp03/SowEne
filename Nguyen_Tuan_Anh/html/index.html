@@ -1,1 +1,141 @@
  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, .profile-image, p, .highlight, .info {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        .profile-container {
+            position: relative;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ff0000;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .profile-container:hover .profile-image {
+            transform: scale(1.1);
+        }
+
+        .info {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .profile-container:hover .info {
+            display: block;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .highlight:hover {
+            background-color: #ffffff;
+            color: #ff0000;
+        }
+
+        /* Additional Styling for Intro Section */
+        .intro-section {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to bottom, #ffffff,#F13930);
+            color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .intro-section h2 {
+            color: #ff0000;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 16px;
+        }
+
+        .info p {
+            color: #333333;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-section">
+        <h2>Xin chào, Tôi là</h2>
+        <h1>Nguyễn Tuấn Anh</h1>
+        <div class="profile-container">
+            <img class="profile-image" src="/img/avatar.png" alt="Avatar">
+            <div class="info">
+                <p>Ngày sinh: 18/12/2003</p>
+                <p>Quê: Xuân Thành, Xuân Trường, Nam Định</p>
+            </div>
+        </div>
+        <p>Một người lập trình đam mê công nghệ và thiết kế web. Kiến thức về HTML, CSS, và JavaScript. Đang học tập để trở thành một chuyên gia phát triển web.</p>
+        <p>Tone màu đỏ tạo nổi bật và chú ý. Hy vọng bạn thích trang web của tôi!</p>
+        <p>Ghé thăm <a href="https://www.facebook.com/profile.php?id=100012692506763&mibextid=LQQJ4d" class="highlight">facebook</a> để biết thêm thông tin về tôi.</p>
+    </div>
+</body>
+</html>
