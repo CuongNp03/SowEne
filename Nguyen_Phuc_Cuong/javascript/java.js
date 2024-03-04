@@ -13,6 +13,6 @@ function changeImg() {
 }
 
 window.onload = function() {
-    setInterval(changeImage, 5000); 
+    setInterval(changeImg, 3000); 
 };
 
